@@ -1,6 +1,6 @@
 {
   "name": "angular2-persian-utils",
-  "version": "0.0.8",
+  "version": "0.1.2",
   "description": "Persian utils for Angular2 applications.",
   "author": "Javad Rasouli ",
   "license": "MIT",
@@ -19,7 +19,8 @@
   ],
   "files": [
     "src",
-    "index.ts"
+    "index.ts",
+	"doc"
   ],
   "scripts": {
   },
