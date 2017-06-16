@@ -6,7 +6,7 @@ This service provides helper for 'persian numbers'.
 
 #### toPersianNumber(number: number | string): string
 
-This method take a "number" and and convert to persian digits.
+This method take a "number" and convert to persian digits.
 ##### Example
 
 ```typescript
@@ -35,7 +35,7 @@ export class AppComponent {
 
 #### isPersianNumber(number: number | string): boolean
 
-This method take a "number" and and check it is persianDigits?
+This method take a "number" and check it is persianDigits?
 
 ##### Example
 
@@ -64,7 +64,7 @@ export class AppComponent {
 
 #### toEngNumber(number: string): number
 
-This method take a "number" and and convert to english number?
+This method take a "number" and convert to english number?
 
 ##### Example
 
@@ -90,7 +90,7 @@ export class AppComponent {
 
 #### toPersianWord(number: number | string): string
 
-This method take a "number" and and convert to persian word?
+This method take a "number" and convert to persian word?
 
 This method not implemented.
 

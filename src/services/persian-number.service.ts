@@ -13,8 +13,8 @@ export class PersianNumberService {
   isPersianNumber(number: number | string): boolean {
     var num = number as string;
 
-    var regexp = new RegExp('^[\u06F0-\u06F90-9]+$');
-    return !regexp.test(num);
+    var regexp = new RegExp('^[\u06F0-\u06F9]+$');
+    return regexp.test(num);
   }
 
   toEngNumber(number: string): number {
