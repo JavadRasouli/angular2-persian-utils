@@ -23,7 +23,10 @@ import {PersianNumberService} from 'angular2-persian-utils'
 export class AppComponent {
 
   constructor(private persianNumberService: PersianNumberService) {
-        console.log(this.persianLettersService.replaceArabicLettersWithPersianLetters('انگولار يك فريمورك ساختاري براي وب اپليكيشن هاي پويا است.'));    // انگولار یک فریمورک ساختاری برای وب اپلیکیشن های پویا است.
+        console.log(this.persianLettersService
+          .replaceArabicLettersWithPersianLetters(
+            'انگولار يك فريمورك ساختاري براي وب اپليكيشن هاي پويا است.')
+          );// انگولار یک فریمورک ساختاری برای وب اپلیکیشن های پویا است.
     }
 }
 ```
