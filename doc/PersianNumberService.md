@@ -90,9 +90,30 @@ export class AppComponent {
 
 #### toPersianWord(number: number | string): string
 
-This method take a "number" and convert to persian word?
+This method take a "number" and convert to persian word.
 
-This method not implemented.
+##### Example
+
+```typescript
+import { Component } from '@angular/core';
+
+import {PersianNumberService} from 'angular2-persian-utils'
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  constructor(private persianNumberService: PersianNumberService) {
+        console.log(this.persianNumberService.toPersianWord('1234567890'));   // یک میلیارد و دویست و سی و چهار میلیون و پانصد و شصت و هفت هزار و هشتصد و نود
+        console.log(this.persianNumberService.toPersianWord('۱۲۳۴۵۶۷۸۹۰'));   // یک میلیارد و دویست و سی و چهار میلیون و پانصد و شصت و هفت هزار و هشتصد و نود 
+        console.log(this.persianNumberService.toPersianWord(1234567890));     // یک میلیارد و دویست و سی و چهار میلیون و پانصد و شصت و هفت هزار و هشتصد و نود
+        console.log(this.persianNumberService.toPersianWord('۱۲۳٤٥٦۷۸۹۰'));   // error: ۱۲۳٤٥٦۷۸۹۰ is not valid persian Number
+  }
+}
+```
 
 ## License
 

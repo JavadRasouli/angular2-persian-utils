@@ -1,4 +1,5 @@
 ﻿import { Injectable } from '@angular/core';
+import { NumberToPersianWord } from './../number-to-persian-word';
 
 @Injectable()
 export class PersianNumberService {
@@ -27,7 +28,7 @@ export class PersianNumberService {
   }
 
   toPersianWord(number: number | string): string {
-    throw 'throw not implemented exception';
+    return (new NumberToPersianWord).convertNumberToString(this.toEngNumber(number as string));
   }
 
   private engNumberTopersian(number: string): string {

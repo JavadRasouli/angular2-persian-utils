@@ -8,7 +8,7 @@ national code >> کد ملی
 
 #### isValid(nationalCode: string): boolean
 
-This method take a "nationalCode' and check it is correctly?
+This method take a 'nationalCode' and check it is correctly?
 
 ##### Example
 
